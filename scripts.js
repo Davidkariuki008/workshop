@@ -17,23 +17,28 @@
 // }
 
 // functions
-function drive(event){
-    event.preventDefault();
+// function drive(event){  // this is function to 
+//     event.preventDefault();
 
-    let age = document.getElementById("age").value;
+//     let age = document.getElementById("age").value;
 
-    if (age==18){
-        document.getElementById(log).innerHTML="you can drive small Car";
-    }
-    else if(age > 18 && age <=24){
-       document.getElementById("log").innerHTML="you can drive big car";
-    }
-    else if (age >24){
-        document.getElementById("log").innerHTML=" you can drive truck";
-    }
-    else{
-        document.getElementById("log").innerHTML="you cannot drive any vehicle at the moment";
-    }
+//     if (age==18){
+//         document.getElementById(log).innerHTML="you can drive small Car";
+//     }
+//     else if(age > 18 && age <=24){
+//        document.getElementById("log").innerHTML="you can drive big car";
+//     }
+//     else if (age >24){
+//         document.getElementById("log").innerHTML=" you can drive truck";
+//     }
+//     else{
+//         document.getElementById("log").innerHTML="you cannot drive any vehicle at the moment";
+//     }
+// }
+
+//  drive(age);
+function reverse_a_number(n){
+    n=n+""
+    return n.split("").reverse().join("");
 }
-
- drive(age);
+document.write("Reverse of the given number is:" + reverse_a_number(12345))
